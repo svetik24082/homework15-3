@@ -1,7 +1,7 @@
 import java.util.Objects;
 
-public class Herbivores extends Mammals{
-    private  final  String  typeOfFood;    // тип пищи
+public class Herbivores extends Mammals {
+    private final String typeOfFood;    // тип пищи
 
     public Herbivores(String name, int age,
                       String livingEnvironment, float speedOfMovement,
@@ -20,11 +20,11 @@ public class Herbivores extends Mammals{
         return "Имя = " + getName() +
                 ", возраст = " + getAge() + " , Среда обитания =" + getLivingEnvironment() +
                 ", скорость перемещения =" + getSpeedOfMovement() +
-                "  ,  тип пищи = " + typeOfFood  ;
+                "  ,  тип пищи = " + typeOfFood;
     }
 
-    public void graze (){
-        System.out.println( " Я пасусь на лугу ");
+    public void graze() {
+        System.out.println(" Я пасусь на лугу ");
     }
 
     @Override

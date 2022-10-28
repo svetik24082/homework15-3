@@ -1,13 +1,13 @@
 import java.util.Objects;
 
-public class Mammals extends Animals{
+public class Mammals extends Animals {
     private String livingEnvironment;   // ср обит
-    private float speedOfMovement ;   // скор перем
+    private float speedOfMovement;   // скор перем
 
     public Mammals(String name, int age, String livingEnvironment, float speedOfMovement) {
         super(name, age);
         this.livingEnvironment = validOrDefault(livingEnvironment, " Информация не указана");
-        this.speedOfMovement = speedOfMovement >0 ? speedOfMovement:30;
+        this.speedOfMovement = speedOfMovement > 0 ? speedOfMovement : 30;
     }
 
     public String getLivingEnvironment() {
@@ -23,22 +23,24 @@ public class Mammals extends Animals{
     }
 
     public void setSpeedOfMovement(float speedOfMovement) {
-        this.speedOfMovement = speedOfMovement >0 ? speedOfMovement:30;
+        this.speedOfMovement = speedOfMovement > 0 ? speedOfMovement : 30;
     }
 
     @Override
     public String toString() {
         return " Среда обитания ='" + livingEnvironment +
-                ", скорость перемещения =" + speedOfMovement ;
+                ", скорость перемещения =" + speedOfMovement;
     }
 
-    public void walk (){
-        System.out.println( " Гуляю ");
+    public void walk() {
+        System.out.println(" Гуляю ");
 
     }
+
     public void eat() {
-        System.out.println( " хочу кушать");
+        System.out.println(" хочу кушать");
     }
+
     public void go() {
         System.out.println(" Перемещаюсь по местности");
     }

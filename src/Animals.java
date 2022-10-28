@@ -1,6 +1,6 @@
 import java.util.Objects;
 
-public  abstract class Animals {
+public abstract class Animals {
     private final String name;
     private final int age;
 
@@ -21,7 +21,7 @@ public  abstract class Animals {
     public String toString() {
         return
                 "Имя = " + name +
-                ", возраст =" + age ;
+                        ", возраст =" + age;
     }
 
     public String validOrDefault(String value, String defaultValue) {
@@ -31,15 +31,18 @@ public  abstract class Animals {
             return value;
         }
     }
-    public void eat(){
-        System.out.println(" Голос " );
+
+    public void eat() {
+        System.out.println(" Голос ");
     }
-    public void sleep(){
-        System.out.println(" Ложусь спать" );
+
+    public void sleep() {
+        System.out.println(" Ложусь спать");
 
     }
-    public void go(){
-        System.out.println( " Иду гулять ");
+
+    public void go() {
+        System.out.println(" Иду гулять ");
     }
 
     @Override
